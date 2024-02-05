@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+}
+.intro {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 6px;
+  padding: 10px;
+}
+.grid-icon {
+  width: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.grid-icon:hover {
+  box-shadow: 2px 2px 5px 5px rgb(223, 223, 215);
+}
+.search-icon {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 350px;
+  right: 10px;
+  bottom: 15px;
+}
+.microphone-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  left: 840px;
+  bottom: 10px;
+}
+.camera-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 350px;
+  bottom: 10px;
+}
+
+.microphone-icon:hover,
+.camera-icon:hover {
+  cursor: pointer;
+}
+.image-1 {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+}
+.image-1:hover {
+  box-shadow: 2px 2px 5px 5px rgb(223, 223, 215);
+}
+
+.gmail,
+.images {
+  padding: 10px;
+  color: #444;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.gmail:hover,
+.images:hover {
+  text-decoration: underline;
+}
+
+.google-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.google-image img {
+  width: 300px;
+}
+
+.input-div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.input-div input {
+  border: 1px solid #7c7878;
+  border-radius: 30px;
+  opacity: 0.3;
+  padding: 15px 400px 15px 30px;
+}
+.input-div :hover {
+  box-shadow: 1px 1px 2px 2px #7c7878;
+  opacity: 0.2;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.btn1,
+.btn2 {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #3c4043;
+  background-color: #f8f9fa;
+  padding: 11px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-color: transparent;
+}
+.btn1:hover {
+  border: 1px solid #c1c7cd;
+  border-radius: 5px;
+}
+.btn2:hover {
+  border: 1px solid #c1c7cd;
+  border-radius: 5px;
+}
+.lang-links {
+  text-align: center;
+  margin-top: 25px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: #3c4043;
+}
+.lang-links a {
+  color: #1a0dab;
+  text-decoration: none;
+  padding: 3px;
+}
+.lang-links a:hover {
+  text-decoration: underline;
+}
+.Nigeria {
+  border-bottom: 1px solid #dadce0;
+  margin-top: 80px;
+  padding: 15px 15px 15px 30px;
+  font-family: arial, sans-serif;
+  color: #202124;
+  font-size: 15px;
+  background-color: #eeedee;
+}
+.sustain-image {
+  width: 11px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  background-color: #eeedee;
+  width: 100%;
+}
+.about,
+.advertising,
+.business,
+.hsw,
+.ots {
+  color: #202124;
+  text-decoration: none;
+}
+
+.about:hover,
+.advertising:hover,
+.business:hover,
+.hsw:hover,
+.ots:hover {
+  text-decoration: underline;
+}
+
+.privacy {
+  padding: 8px;
+  color: #202124;
+  text-decoration: none;
+}
+
+.terms {
+  padding: 20px;
+  color: #202124;
+  text-decoration: none;
+}
+.settings {
+  color: #202124;
+  text-decoration: none;
+}
+.privacy:hover,
+.terms:hover,
+.settings:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 560px) {
+  .input-div input {
+    padding: 15px 40px 15px 40px;
+  }
+  .search-icon,
+  .microphone-icon,
+  .camera-icon {
+    visibility: hidden;
+  }
+  .about,
+  .advertising,
+  .business,
+  .hsw,
+  .ots {
+    padding: 5px;
+  }
+}
